@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+<head>
+    <title>Spittr</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/resources/style.css}"></link>    <!--到样式表的th:href链接-->
+</head>
+<body>
+<h1>Welcome to Spittr</h1>
+<h1 th:text="${test}"></h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>AGE</th>
+    </tr>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.id}">Onions</td>
+        <td th:text="${user.userName}">2.41</td>
+        <td th:text="${user.age}">2.41</td>
+
+    </tr>
+</table>
+</body>
+</html>
