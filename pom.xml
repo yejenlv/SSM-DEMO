@@ -73,7 +73,7 @@
         </dependency>
         <!--JSR303数据校验支持；tomcat7及以上的服务器，
 		tomcat7以下的服务器：el表达式。额外给服务器的lib包中替换新的标准的el
-		-->
+        -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
